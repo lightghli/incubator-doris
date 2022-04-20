@@ -118,7 +118,7 @@ brpc_port = 8060
 # Default value is empty.
 priority_networks = 192.168.59.0/24 # data root path, seperate by ';'
 storage_root_path = /soft/be/storage 
-# sys_log_dir = ${PALO_HOME}/log
+# sys_log_dir = ${DORIS_HOME}/log
 # sys_log_roll_mode = SIZE-MB-
 # sys_log_roll_num =
 # sys_log_verbose_modules =
@@ -152,7 +152,7 @@ mkdir -p /soft/be/storage
             "args": [],
             "stopAtEntry": false,
             "cwd": "/home/workspace/incubator-doris/",
-            "environment": [{"name":"PALO_HOME","value":"/home/workspace/incubator-doris/output/be/"},
+            "environment": [{"name":"DORIS_HOME","value":"/home/workspace/incubator-doris/output/be/"},
                             {"name":"UDF_RUNTIME_DIR","value":"/home/workspace/incubator-doris/output/be/lib/udf-runtime"},
                             {"name":"LOG_DIR","value":"/home/workspace/incubator-doris/output/be/log"},
                             {"name":"PID_DIR","value":"/home/workspace/incubator-doris/output/be/bin"}
